@@ -1,0 +1,19 @@
+.header {
+  color: #ee6e73;
+  font-weight: 300;
+}
+
+.positive {
+  color: #46BFBD;
+  font-weight: bolder;
+}
+
+.negative {
+  color: #F7464A;
+  font-weight: bolder;
+}
+
+.neutral {
+  color: #FDB45C;
+  font-weight: bolder;
+}

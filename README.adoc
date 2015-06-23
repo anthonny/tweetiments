@@ -1,0 +1,7 @@
+= Tweetiments
+
+image::screenshot.png[]
+
+== Slides
+
+http://anthonny.github.io/decks/full-stack-reactivity-avec-meteorjs/[Full stack reactivity avec Meteor.js]
