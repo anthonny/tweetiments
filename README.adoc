@@ -2,6 +2,67 @@
 
 image::screenshot.png[]
 
+== Setup
+
+http://meteor.com[Meteor] must be installed
+
+=== Linux or OS X
+[source, shell]
+----
+curl https://install.meteor.com/ | sh
+----
+
+=== Windows
+https://install.meteor.com/windows[Download the official Meteor installer here]
+
+== Usage
+
+=== Clone the project
+
+[source, shell]
+----
+git clone https://github.com/anthonny/tweetiments.git
+cd tweetiments
+----
+
+=== Twitter application
+
+First of all you must create a https://apps.twitter.com/[Twitter application].
+
+Then you must create a `settings.json` file with the following content:
+
+[source, json]
+----
+{
+  "twitter": {
+    "consumer_key": "XXXXXXXXXXXXXXXX",
+    "consumer_secret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "access_token": "XXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXX",
+    "access_token_secret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  }
+}
+----
+
+=== Change the words to track
+In the file `server/main.js`, you can specify the words to track:
+
+[source, javascript]
+----
+var stream = twitterApi.stream('statuses/filter', {
+  track: ['nantesjug'] // you can put here ['all', 'the', 'words', 'you', 'need', 'to', 'track']
+})
+----
+
+NOTE: You can find more information about Twit https://github.com/ttezel/twit[here]
+
+=== Run the app
+Now you can start the application with the following command:
+
+[source, shell]
+----
+meteor --settings ./settings.json
+----
+
 == Slides
 
 http://anthonny.github.io/decks/full-stack-reactivity-avec-meteorjs/[Full stack reactivity avec Meteor.js]
