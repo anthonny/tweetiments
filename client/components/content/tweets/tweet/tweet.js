@@ -6,5 +6,9 @@ Template.tweet.helpers({
       return 'negative';
 
     return 'neutral';
+  },
+
+  ago: function(ts) {
+    return moment(Number(ts)).fromNow();
   }
 });

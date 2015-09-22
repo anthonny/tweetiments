@@ -1,8 +1,16 @@
 {
   "twitter": {
-    "consumer_key": "XXXXXXXXXXXXXXXXX",
-    "consumer_secret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "access_token": "XXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-    "access_token_secret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    "consumer_key": "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "consumer_secret": "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "access_token": "XXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXX",
+    "access_token_secret": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  },
+  "public": {
+    "admin": "anthonny_q",
+    "tags": ["JSC2015", "JSCMeteor", "JUGSummerCamp"]
+  },
+  "kadira": {
+    "appId": "XXXXXXXXXXXXXXXX",
+    "appSecret": "xxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxx"
   }
 }

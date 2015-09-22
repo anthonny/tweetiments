@@ -1,0 +1,12 @@
+<template name="tweets">
+  <div class="card">
+    <div class="card-content black-text">
+      <span class="card-title black-text">Tweets</span>
+      <ul class="collection">
+        {{#each tweets}}
+          {{> tweet}}
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</template>

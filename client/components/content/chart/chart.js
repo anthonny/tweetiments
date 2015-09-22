@@ -1,13 +1,13 @@
 Template.chart.helpers({
   count: function(){
-    return Tweets.find().count();
+    return Tweets.find(Session.get("filter-userId")).count();
   }
 });
 
 Template.chart.rendered = function(){
 
   function renderChart() {
-    var scores = _.reduce(Tweets.find().fetch(), function(memo, tweet) {
+    var scores = _.reduce(Tweets.find(Session.get("filter-userId")).fetch(), function(memo, tweet) {
       if (tweet.sentiment) {
          if (tweet.sentiment.score > 0)
            memo.positive += 1;

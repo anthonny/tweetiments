@@ -1,19 +1,66 @@
+html, body {
+  background-color: #ececec;
+}
+
 .header {
   color: #ee6e73;
   font-weight: 300;
 }
 
+.collection-item.avatar:hover {
+
+}
+
+#photos .card {
+  overflow:visible;
+}
+
 .positive {
   color: #46BFBD;
-  font-weight: bolder;
+}
+.positive-bg {
+  background-color: #46BFBD;
 }
 
 .negative {
   color: #F7464A;
-  font-weight: bolder;
+}
+.negative-bg {
+  background-color: #F7464A;
 }
 
 .neutral {
   color: #FDB45C;
-  font-weight: bolder;
+}
+.neutral-bg {
+  background-color: #FDB45C;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 48px;
+    line-height: 48px;
+}
+
+span.badge.status {
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #fff;
+    border-radius: 2px;
+}
+
+@media only screen and (max-width : 992px) {
+
+  .topusers {
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  
+  nav .brand-logo {
+    left: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
 }

@@ -1,25 +1,24 @@
 <head>
   <title>Tweetiments</title>
+  <meta name="viewport" content="user-scalable=no, width=device-width, maximum-scale=1, initial-scale=1, minimum-scale=1">
 </head>
 
 <body>
 
   <nav>
-    <div class="nav-wrapper container">
-      <a href="#" class="brand-logo">Tweetiments</a>
+    <div class="nav-wrapper ">
+      <a href="#" class="brand-logo">Tweetiments <small>#jsc2015</small></a>
     </div>
   </nav>
 
-  <div class="container">
+  <div class="canvas-container">
     <div class="row">
-      <div class="col s12 m6">
-        {{> tweets}}
+      <div class="col s12 m3">
+        {{> leftbar}}
       </div>
-      <div class="col s12 m6">
-        {{> chart}}
+      <div class="col s12 m9">
+        {{> content}}
       </div>
     </div>
   </div>
-
-
 </body>

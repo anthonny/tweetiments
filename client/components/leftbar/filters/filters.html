@@ -1,0 +1,87 @@
+<template name="filters">
+  <div class="card">
+    <div class="card-content black-text">
+      <span class="card-title black-text">Period</span>
+      <form id="filters" class="col s12">
+        <div class="row">
+          <div class="col s12">
+             <input type="date" name="date" placeholder="Day" class="datepicker">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <label>Begin</label>
+            <select class="browser-default" name="begin-hour">
+              <option value="0" selected>0 heure</option>
+              <option value="1">1 heure</option>
+              <option value="2">2 heures</option>
+              <option value="3">3 heures</option>
+              <option value="4">4 heures</option>
+              <option value="5">5 heures</option>
+              <option value="6">6 heures</option>
+              <option value="7">7 heures</option>
+              <option value="8">8 heures</option>
+              <option value="9">9 heures</option>
+              <option value="10">10 heures</option>
+              <option value="11">11 heures</option>
+              <option value="12">12 heures</option>
+              <option value="13">13 heures</option>
+              <option value="14">14 heures</option>
+              <option value="15">15 heures</option>
+              <option value="16">16 heures</option>
+              <option value="17">17 heures</option>
+              <option value="18">18 heures</option>
+              <option value="19">19 heures</option>
+              <option value="20">20 heures</option>
+              <option value="21">21 heures</option>
+              <option value="22">22 heures</option>
+              <option value="23">23 heures</option>
+            </select>
+          </div>
+          <div class="col s12 m6">
+            <label>End</label>
+            <select class="browser-default" name="end-hour">
+              <option value="0">0 heure</option>
+              <option value="1">1 heure</option>
+              <option value="2">2 heures</option>
+              <option value="3">3 heures</option>
+              <option value="4">4 heures</option>
+              <option value="5">5 heures</option>
+              <option value="6">6 heures</option>
+              <option value="7">7 heures</option>
+              <option value="8">8 heures</option>
+              <option value="9">9 heures</option>
+              <option value="10">10 heures</option>
+              <option value="11">11 heures</option>
+              <option value="12">12 heures</option>
+              <option value="13">13 heures</option>
+              <option value="14">14 heures</option>
+              <option value="15">15 heures</option>
+              <option value="16">16 heures</option>
+              <option value="17">17 heures</option>
+              <option value="18">18 heures</option>
+              <option value="19">19 heures</option>
+              <option value="20">20 heures</option>
+              <option value="21">21 heures</option>
+              <option value="22">22 heures</option>
+              <option value="23">23 heures</option>
+              <option value="24" selected>24 heures</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="tags" name="tags" type="text" class="validate">
+            <label for="tags">#Hashtags</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 right-align">
+            <button class="btn waves-effect waves-light" type="submit" name="refresh">Refresh</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</template>

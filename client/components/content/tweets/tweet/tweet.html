@@ -1,0 +1,18 @@
+<template name="tweet">
+  <li class="collection-item avatar">
+      <img src="{{user.profile_image_url}}" alt="" class="circle">
+      <span class="title">{{user.name}}<span class="badge status {{getCssClass sentiment}}-bg">{{getCssClass sentiment}}</span></span>
+      <p>
+        <small>
+          {{text}}
+
+        </small>
+      </p>
+      <p>
+        <small>
+          <strong>{{ago timestamp_ms}}</strong>
+
+        </small>
+      </p>
+    </li>
+</template>

@@ -1,0 +1,19 @@
+<template name="photos">
+  <div class="card">
+    <div class="card-content black-text">
+      <span class="card-title black-text">Photos</span>
+      <div class="row">
+        {{#each photos}}
+          {{#each extended_entities.media}}
+            {{#if eq type "photo"}}
+              <div class="col s12 m6">
+                <img class="materialboxed responsive-img" src="{{media_url}}">
+              </div>
+
+            {{/if}}
+          {{/each}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</template>

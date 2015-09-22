@@ -1,1 +1,3 @@
-Meteor.subscribe("tweets");
+Meteor.startup(function(){
+  Session.set("filter-userId", {});
+});
