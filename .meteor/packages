@@ -4,11 +4,20 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-meteor-platform
-mrt:twit
-art1sec8:sentiment
-materialize:materialize
-chart:chart
-momentjs:moment
-konecty:autolinker
-meteorhacks:kadira
+meteor-base             # Packages every Meteor app needs to have
+mobile-experience       # Packages for a great mobile UX
+mongo                   # The database Meteor supports right now
+blaze-html-templates    # Compile .html files into Meteor Blaze views
+session                 # Client-side reactive dictionary for your app
+jquery                  # Helpful client-side library
+tracker                 # Meteor's client-side reactive programming library
+
+standard-minifiers      # JS/CSS minifiers run for production mode
+es5-shim                # ECMAScript 5 compatibility for older browsers.
+ecmascript              # Enable ECMAScript2015+ syntax in app code
+
+mrt:twit@=0.2.0
+art1sec8:sentiment@=0.0.1
+materialize:materialize@=0.97.0
+chart:chart@=1.0.1-beta.4
+momentjs:moment@=2.10.6
